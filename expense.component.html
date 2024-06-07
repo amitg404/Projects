@@ -1,0 +1,15 @@
+<div class="expense-container">
+  <h1>Expense Tracker</h1>
+  <form (ngSubmit)="addExpense()">
+    <input [(ngModel)]="newExpense.description" name="description" placeholder="Description" required />
+    <input [(ngModel)]="newExpense.amount" name="amount" type="number" placeholder="Amount" required />
+    <button type="submit">Add Expense</button>
+  </form>
+  <ul>
+    <li *ngFor="let expense of expenses; let i = index">
+      {{ expense.description }} - ${{ expense.amount }}
+      <button (click)="removeExpense(i)">x</button>
+    </li>
+  </ul>
+  <h2>Total: ${{ getTotal() }}</h2>
+</div>
