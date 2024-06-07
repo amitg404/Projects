@@ -1,0 +1,47 @@
+.expense-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-top: 20px;
+}
